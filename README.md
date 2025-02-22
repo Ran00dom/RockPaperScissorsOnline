@@ -7,7 +7,7 @@ Online game | qmake Qt 6_8_2
 ![Иллюстрация к проекту](https://github.com/Ran00dom/RockPaperScissorsOnline/raw//develop/Screen/2.png)
 ## Меню игры, снизу можно выбрать предмет
 ![Иллюстрация к проекту](https://github.com/Ran00dom/RockPaperScissorsOnline/raw//develop/Screen/3.png)
-## Программа будет ожидать сообщение о готовности другого игрока прежде чем отправить информацию о выбранном предмете
+## Программа будет ожидать сообщения о готовности другого игрока прежде чем отправить информацию о выбранном предмете
 ![Иллюстрация к проекту](https://github.com/Ran00dom/RockPaperScissorsOnline/raw//develop/Screen/4.png)
 
 
