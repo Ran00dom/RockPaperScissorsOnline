@@ -3,11 +3,12 @@
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
+#include <playercontroller.h>
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-
+    PlayerController a(argc, argv);
+    /*
     QTranslator translator;
     const QStringList uiLanguages = QLocale::system().uiLanguages();
     for (const QString &locale : uiLanguages) {
@@ -19,5 +20,6 @@ int main(int argc, char *argv[])
     }
     Window w;
     w.show();
+    */
     return a.exec();
 }
