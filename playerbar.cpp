@@ -12,8 +12,8 @@ PlayerBar::PlayerBar(QWidget *parent)
     image = new QLabel(this);
     icon = new QIcon();
     QHBoxLayout *layoutMain = new QHBoxLayout(this);
-    if (!playerImage->load(":/resource/img/BaseImagePlayer.png"))
-        playerImage->load(":/resource/img/BaseImagePlayer.png");
+    if (!playerImage->load(":/resource/img/Image/BaseImagePlayer.png"))
+        playerImage->load(":/resource/img/Image/BaseImagePlayer.png");
 
     image->setPixmap(playerImage->scaled(50, 50, Qt::KeepAspectRatio));
     layoutMain->addWidget(image);

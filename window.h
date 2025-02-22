@@ -8,6 +8,7 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QImage>
+#include "gamewindow.h"
 #include "menu.h"
 #include "lobbylist.h"
 
@@ -29,8 +30,11 @@ class Window : public QWidget
 public:
     LobbyList *lobbyMenu;
     Menu *mainMenu;
+    GameWindow *gameWindow;
     explicit Window(QWidget *parent = nullptr);
     ~Window();
-
+    void openGameWindow(bool);
 };
+
+
 #endif // WINDOW_H

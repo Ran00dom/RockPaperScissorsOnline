@@ -4,18 +4,29 @@ Window::Window(QWidget *parent)
     : QWidget(parent)
 {
     QHBoxLayout *LayoutMain = new QHBoxLayout(this);
-    //QVBoxLayout *LayoutMenu = new QVBoxLayout();
-
+    gameWindow = new GameWindow(this);
     lobbyMenu = new LobbyList(this);
     mainMenu = new Menu(this);
 
-    LayoutMain->addWidget(lobbyMenu);
-    LayoutMain->addWidget(mainMenu);
+    gameWindow->setVisible(false);
 
-    //LayoutMain->addLayout(LayoutMenu);
+    LayoutMain->addWidget(lobbyMenu);
+    LayoutMain->addWidget(gameWindow);
+    LayoutMain->addWidget(mainMenu);
 }
 
 Window::~Window()
 {
 
+}
+
+void Window::openGameWindow(bool open){
+    if (open){
+        gameWindow->setVisible(true);
+        lobbyMenu->setVisible(false);
+    }
+    else{
+        gameWindow->setVisible(false);
+        lobbyMenu->setVisible(true);
+    }
 }

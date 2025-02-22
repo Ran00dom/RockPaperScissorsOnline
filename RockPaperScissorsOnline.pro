@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    gamewindow.cpp \
     lobbylist.cpp \
     main.cpp \
     menu.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
     window.cpp
 
 HEADERS += \
+    gamewindow.h \
     lobbylist.h \
     menu.h \
     onlinemanager.h \

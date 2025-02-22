@@ -21,7 +21,7 @@ public:
     explicit LobbyList(QWidget *parent = nullptr);
     ~LobbyList();
 
-    void addLobby(QString addres, QString name);
+    void addLobby(QString address, QString name);
     void clearLobbyList();
 signals:
     void selectLobby(QString);

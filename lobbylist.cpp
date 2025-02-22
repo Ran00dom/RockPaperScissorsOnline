@@ -13,11 +13,11 @@ LobbyList::~LobbyList()
 
 }
 
-void LobbyList::addLobby(QString addres, QString name)
+void LobbyList::addLobby(QString address, QString name)
 {
     QListWidgetItem *item = new QListWidgetItem();
-    item->setText(name + " | " + addres);
-    item->setData(1, QVariant(addres));
+    item->setText(name + " | " + address);
+    item->setData(1, QVariant(address));
     list->addItem(item);
 }
 

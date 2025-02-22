@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/resource/img">
-        <file>BaseImagePlayer.png</file>
+        <file>Image/Paper.png</file>
+        <file>Image/Rock.png</file>
+        <file>Image/Scissors.png</file>
+        <file>Image/BaseImagePlayer.png</file>
     </qresource>
 </RCC>
